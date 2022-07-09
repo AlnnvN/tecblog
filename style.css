@@ -28,23 +28,21 @@ body{
 }
 
 .body-div{
-
-    margin-left: auto;
-    margin-right: auto;
+    width: auto;
     max-width: 100%;
 
     display:flex;
     align-items: center;
     justify-content: center;
 
-    /* border: solid white 2px; */
+    /* border: solid green 2px; */
 }
 
 #hdr-div{
     background-image: var(--gradient);
     padding: 3.5vh;
-
-    border-bottom: solid white 7vh;
+    flex-direction: column;
+    /* border-bottom: solid white 7vh; */
 }
 
 
@@ -58,4 +56,42 @@ h1{
 h1 span{ 
     font-size: 1em; 
     font-weight: 200;
+}
+
+#menu-div{
+    margin-top: 4vh;
+    justify-content: space-between;
+    width: 70%;
+}
+
+a{
+    position:relative;
+    bottom: .3vh;
+    font-size: 1.85em;
+    font-weight: 200;
+    color: white;
+    text-decoration: none;
+
+    padding: .5vh 1.5vw;
+    padding-top: .1vh;
+
+    transition-duration: 0.2s;
+}
+
+a:hover{
+    background-color: white;
+    color: var(--color4);
+    mix-blend-mode: hard-light;
+}
+
+a:nth-child(1){
+    background-color: white;
+    color: var(--color4);
+    mix-blend-mode: hard-light;
+}
+
+.menu-divisor{
+    background-color: white;
+    height: 3vh;
+    width: .05vw;
 }
