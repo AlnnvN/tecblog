@@ -51,10 +51,16 @@ body{
 }
 
 #footer-div{
+    color:white;
     height: 5vh;
-    margin:5vh 0;
+    margin-bottom:5vh;
 }
 
+
+#logo{
+    margin-top: 1vh;
+    height: 15vh;
+}
 
 h1{
     margin-top: 0px;
@@ -64,8 +70,9 @@ h1{
 }
 
 h1 span{ 
+    color: white;
     font-size: 1em; 
-    font-weight: 200;
+    font-weight: 100;
 }
 
 #menu-div{
@@ -79,7 +86,7 @@ h1 span{
     bottom:2px;
     background-color: white;
     height: 3vh;
-    width: .09vw;
+    width: .1vw;
 }
 
 a{
@@ -126,10 +133,11 @@ a:nth-child(1){
 }
 
 #nav-div{
-    /* border: dashed rgb(255, 247, 0) 2px; */
+    border: dashed rgb(255, 247, 0) 2px;
 }
 
 .post{
+    margin-bottom: 5%;
     background-color: white;
     padding: 3vh 3vw;
     border-left: #F72585 solid 6px;
@@ -137,6 +145,8 @@ a:nth-child(1){
 }
 
 .post h2{
+    width: 100%;
+    float:left;
     font-size: 2.5em;
     font-weight: 500;
     background-image: var(--gradient);
@@ -147,6 +157,42 @@ a:nth-child(1){
 }
 
 .post span{
+    float:left;
+    width: 100%;
     font-size: 1.25em;
     color:#2b2d427a;
+    
+}
+
+img{
+    float:left;
+    width: 50%;
+    margin: 7% 5% 1.65% 0%;
+}
+
+p{
+    margin-top: 15%;
+    margin-bottom:3%;
+    text-indent: 5%;
+    font-size: 1.4em;
+    color: #2B2D42;
+    text-align: justify;
+}
+
+#recent-div{
+    background-color: white;
+    width: calc(100% - 2vw);
+    padding-top: 2vh;
+    padding-left: 2vw;
+}
+
+h3{
+    font-size: 2em;
+    font-weight: 500;
+    background-image: var(--gradient);
+    background-size: 100%;
+    background-clip:text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
