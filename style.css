@@ -38,11 +38,21 @@ body{
     /* border: solid green 2px; */
 }
 
-#hdr-div{
+.grad-bkgrnd{
     background-image: var(--gradient);
+}
+
+#hdr-div{
     padding: 3.5vh;
     flex-direction: column;
-    /* border-bottom: solid white 7vh; */
+    margin-bottom:5vh;
+
+    border-bottom: solid white 1vh;
+}
+
+#footer-div{
+    height: 5vh;
+    margin:5vh 0;
 }
 
 
@@ -62,6 +72,14 @@ h1 span{
     margin-top: 4vh;
     justify-content: space-between;
     width: 70%;
+}
+
+.menu-divisor{
+    position:relative;
+    bottom:2px;
+    background-color: white;
+    height: 3vh;
+    width: .09vw;
 }
 
 a{
@@ -90,8 +108,45 @@ a:nth-child(1){
     mix-blend-mode: hard-light;
 }
 
-.menu-divisor{
+
+#content-div{
+    width: 80%;
+    max-width: 80%;
+    margin: 0 auto;
+
+    /* border: dashed rgb(255, 247, 0) 2px; */
+
+    display:grid;
+    grid-template-columns: 74% 25%;
+    column-gap: 1%;
+}
+
+#posts-div{
+    /* border: dashed rgb(255, 247, 0) 2px; */
+}
+
+#nav-div{
+    /* border: dashed rgb(255, 247, 0) 2px; */
+}
+
+.post{
     background-color: white;
-    height: 3vh;
-    width: .05vw;
+    padding: 3vh 3vw;
+    border-left: #F72585 solid 6px;
+    word-wrap: break-word;
+}
+
+.post h2{
+    font-size: 2.5em;
+    font-weight: 500;
+    background-image: var(--gradient);
+    background-size: 100%;
+    background-clip:text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.post span{
+    font-size: 1.25em;
+    color:#2b2d427a;
 }
