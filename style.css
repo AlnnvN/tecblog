@@ -89,7 +89,7 @@ h1 span{
     width: .1vw;
 }
 
-a{
+#menu-div a{
     position:relative;
     bottom: .3vh;
     font-size: 1.85em;
@@ -103,13 +103,13 @@ a{
     transition-duration: 0.2s;
 }
 
-a:hover{
+#menu-div a:hover{
     background-color: white;
     color: var(--color4);
     mix-blend-mode: hard-light;
 }
 
-a:nth-child(1){
+#menu-div a:nth-child(1){
     background-color: white;
     color: var(--color4);
     mix-blend-mode: hard-light;
@@ -133,7 +133,7 @@ a:nth-child(1){
 }
 
 #nav-div{
-    border: dashed rgb(255, 247, 0) 2px;
+    /* border: dashed rgb(255, 247, 0) 2px; */
 }
 
 .post{
@@ -179,20 +179,55 @@ p{
     text-align: justify;
 }
 
-#recent-div{
+.recent-div{
+    display:flex;
+    flex-direction: column;
+    
     background-color: white;
     width: calc(100% - 2vw);
+
     padding-top: 2vh;
     padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 2vh;
+
+    border-left: #F72585 solid 6px;
 }
 
-h3{
+.recent-div h3{
     font-size: 2em;
     font-weight: 500;
+    
     background-image: var(--gradient);
-    background-size: 100%;
+    background-size: 150%;
     background-clip:text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
+    margin-bottom: 2vh;
+
+}
+
+.recent-div span{
+    font-size: 1.2em;
+    color:#2B2D42;
+    
+}
+
+.recent-div a{
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: -2vh;
+
+    background-image: var(--gradient);
+    background-size: 200%;
+    background-clip:text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    transition-duration: 0.2s;
+}
+
+.recent-div a:hover{
+    background-size: 100%;
 }
